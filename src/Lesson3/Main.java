@@ -60,7 +60,7 @@ public class Main {
         parseArray(linesArray);
         testData();
         printData();
-        writeData();
+        if(countOfRightData == 4) writeData();
     }
 
     public static void printData() {
@@ -74,7 +74,7 @@ public class Main {
     public static void printLines(String[] array) {
         System.out.print("Вы ввели: ");
         for (String s : array) {
-            System.out.print(s);
+            System.out.print("[" + s + "] ");
         }
         System.out.print("\n");
     }
